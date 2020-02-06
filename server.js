@@ -14,9 +14,6 @@ app.use(expressValidator());
 // Set db
 require('./data/reddit-db');
 
-
-
-
 //Middleware
 const exphbs = require('express-handlebars');
 
