@@ -6,5 +6,7 @@ const CommentSchema = new Schema({
 },
   {timestamps: {createdAt: 'created_at'}}
 );
+author : { type: Schema.Types.ObjectId, ref: "User", required: true }
+posts : [{ type: Schema.Types.ObjectId, ref: "Post" }]
 
 module.exports = mongoose.model("Comment", CommentSchema);
