@@ -13,5 +13,7 @@
 </form>
 
 {{#each post.comments}}
-  <p>{{this.content}}<p>
+    <p>{{this.content}}</p>
+    <p class="text-right">{{this.author.username}}</p>
+    <a href="/posts/{{../post._id}}/comments/{{this._id}}/replies/new">Reply</a>
 {{/each}}
